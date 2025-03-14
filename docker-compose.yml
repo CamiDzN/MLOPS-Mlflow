@@ -27,6 +27,14 @@ services:
       - ./minio:/data
     restart: unless-stopped
 
+  fastapi:
+    build: ./fastapi
+    container_name: fastapi_service
+    ports:
+      - "8081:8000"  # Accedes a FastAPI en http://localhost:8081
+    depends_on:
+      - mysql
+
   api:
     build:
       context: ./api
