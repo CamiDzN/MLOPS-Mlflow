@@ -6,7 +6,7 @@ After=network.target
 User=estudiante
 Restart=on-failure
 RestartSec=3
-WorkingDirectory=/home/estudiante/MLOPS_PUJ/Niveles/2/mlflow/
+WorkingDirectory=/home/estudiante/MLOPS-Mlflow/
 Environment=MLFLOW_S3_ENDPOINT_URL=http://10.43.101.172:9000
 Environment=AWS_ACCESS_KEY_ID=admin
 Environment=AWS_SECRET_ACCESS_KEY=supersecret
