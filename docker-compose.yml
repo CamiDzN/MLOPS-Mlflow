@@ -11,8 +11,8 @@ services:
     volumes:
       - ./mysql-init:/docker-entrypoint-initdb.d
       - mysql_data:/var/lib/mysql
-    restart: unless-stopped
     command: --local-infile=1
+    restart: unless-stopped
 
   minio:
     container_name: Minio
