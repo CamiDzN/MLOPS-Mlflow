@@ -1,10 +1,11 @@
-Flask==2.0.3
 mlflow
 pymysql
-scikit-learn
+scikit-learn==1.0.2
 pandas
 fastapi
 uvicorn
 numpy>=1.21.0,<1.24.0
 joblib
 dill
+boto3
+
