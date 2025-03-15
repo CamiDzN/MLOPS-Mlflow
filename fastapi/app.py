@@ -18,6 +18,7 @@ def load_models():
     Carga los modelos registrados en MLflow para cada nombre presente en model_names.
     Se construye el URI de cada modelo con el formato: models:/{model_name}/Production.
     """
+    mlflow.set_tracking_uri("http://10.43.101.172:5000")  # Cambia "mlflow_serv" por la IP/hostname si es necesario
     global models
     models = {}  # Reinicia el diccionario
     print("Cargando modelos desde MLflow para:", model_names)
